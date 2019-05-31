@@ -1,6 +1,5 @@
 @mixin triangle($direction, $size: 6px,$size2: 6px, $color: #222){
   content: '';
-  display: block;
   position: absolute;
   height: 0; width: 0;
   @if ($direction == 'up'){

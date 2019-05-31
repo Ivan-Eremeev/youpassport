@@ -1,0 +1,52 @@
+extends blocks/base.jade
+
+block title 
+	title Главная
+
+block content
+
+	include blocks/header.jade
+	
+	// main
+	main#main.main
+
+		// hotline
+		#hotline.hotline
+			.wrapper
+				.hotline_block
+					.hotline_img.img-responsive
+						img(src="img/hotline-men.png", alt="men")
+					.hotline_content
+						.hotline_title Многоканальная бесплатная горячая линия
+						.hotline_text Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др. 
+						ul.hotline_list
+							li.hotline_item
+								a(href="tel:+74999385302").hotline_link +7 (499) 938-53-02
+								span.hotline_span Москва и МО
+							li.hotline_item
+								a(href="tel:+78124673705").hotline_link +7 (812) 467-37-05
+								span.hotline_span С-Петербург и ЛО
+							li.hotline_item
+								span.hotline_span Ежедневно с 9:00 до 21:00
+		// /hotline
+		
+	// /main
+		
+	include blocks/footer.jade
+
+block js
+	script(src="js/jquery-3.2.1.min.js")
+	//- script(src="js/jquery.fancybox.min.js")
+	//- script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.bundle.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	//- script(src="js/jquery.vide.min.js")
+	//- script(src="js/jquery.scrollbar.min.js")
+	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
+	script(src="js/script.js")

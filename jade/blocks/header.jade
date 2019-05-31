@@ -1,33 +1,461 @@
 // header
 header.header#header
-	.wrapper
-		.header_container
 
-			// menu
-			//- .menu--left .menu--right .menu--top .menu--bottom .menu--drop
-			#menu.menu.menu--right
-				button#menu-btn.menu_btn.hamburger.hamburger--vortex(type="button")
-					span.hamburger-box
-						span.hamburger-inner
-				nav#mmenu.menu_nav
-					ul.menu_list
-						li.menu_item
-							a(href="#").menu_link Меню 1
-						li.menu_item
-							a(href="#").menu_link Меню 2
-						li.menu_item
-							a(href="#").menu_link Меню 3
-						li.menu_item
-							a(href="#").menu_link Меню 4
-						li.menu_item
-							a(href="#").menu_link Меню 5
-						li.menu_item
-							a(href="#").menu_link Меню 6
-						li.menu_item
-							a(href="#").menu_link Меню 7
-						li.menu_item
-							a(href="#").menu_link Меню 8
-				.menu_over
-			// /menu
+	// info
+	.wrapper
+		#info.info
+			.logo
+				a(href="#").logo_img
+					img(src="img/logo.svg", alt="logo")
+				.logo_content
+					a(href="#").logo_title youpassport.ru
+					.logo_text Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др.
+			.callback
+				a(href="#").callback_btn.btn Обратная связь
+				.callback_text г. Москва, Пролетарский проспект 135 корпус 2, офис 357
+			button#menu-btn.info_btn.hamburger.hamburger--vortex.mobile-visible(type="button")
+				span.hamburger-box
+					span.hamburger-inner
+	// /info
+
+	// menu
+	#menu.menu
+		.wrapper
+			nav.menu_nav 
+				span.menu_name.mobile-visible Меню
+				.menu_close
+				ul.menu_list
+					li.menu_item
+						a(href="#").menu_link Внутренний паспорт РФ
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item.submenu_img
+										img(src="img/pasport-1.jpg", alt="image")
+					li.menu_item
+						a(href="#").menu_link Загранпаспорт РФ
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 2
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 2
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+					li.menu_item
+						a(href="#").menu_link Регистрационные вопросы
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 3
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 3
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+					li.menu_item
+						a(href="#").menu_link Временная регистрация
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 4
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 4
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item.submenu_img
+										img(src="img/pasport-1.jpg", alt="image")
+					li.menu_item
+						a(href="#").menu_link Выписка
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 5
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 5
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item.submenu_img
+										img(src="img/pasport-1.jpg", alt="image")
+					li.menu_item
+						a(href="#").menu_link РВП
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 6
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 6
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item.submenu_img
+										img(src="img/pasport-1.jpg", alt="image")
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 6
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+					li.menu_item
+						a(href="#").menu_link Общая информация
+							span.menu_arrow.icon-keyboard_arrow_down.mobile-hide
+						span.menu_arrow.icon-keyboard_arrow_down.mobile-visible
+						ul.submenu
+							li
+								ul.wrapper
+									li.submenu_item
+										a(href="#").submenu_link Получение и замена паспорта РФ 7
+										ul.submenu_list
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ (общие сведения)
+											li.submenu_subitem
+												a(href="#").submenu_sublink Получение паспорта РФ в 14 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 20 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ в 45 лет
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при порче
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта РФ при краже
+											li.submenu_subitem
+												a(href="#").submenu_sublink Замена паспорта при смене фамилии
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать при потере паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Госпошлина
+											li.submenu_subitem
+												a(href="#").submenu_sublink Штраф за просроченный паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 7
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item.submenu_img
+										img(src="img/pasport-1.jpg", alt="image")
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 7
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+									li.submenu_item
+										a(href="#").submenu_link Общие сведения о паспорте РФ 7
+										ul.submenu_sublist
+											li.submenu_subitem
+												a(href="#").submenu_sublink Все про код подразделения выдавшего паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Серия и номер паспорта РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как узнать кем выдан паспорт РФ
+											li.submenu_subitem
+												a(href="#").submenu_sublink Требования для фото на паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как проверить готовность паспорта
+											li.submenu_subitem
+												a(href="#").submenu_sublink Что делать если украли паспорт
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как поменять прописку в паспорте
+											li.submenu_subitem
+												a(href="#").submenu_sublink Проверка паспорта на действительность
+											li.submenu_subitem
+												a(href="#").submenu_sublink Как и где вписать ребенка в паспорт
+			.menu_over
+	// /menu
 
 // /header

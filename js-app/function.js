@@ -19,23 +19,22 @@
 // libs-settings/google-map-settings.js
 // mailto-ajax.js
 
+// Брэйкпоинты js
+var	breakXl = 1400,
+		breakLg = 1200,
+		breakMd = 1025,
+		breakSm = 769,
+		breakXs = 500;
+
 $(document).ready(function () {
-
-	// Брэйкпоинты js
-	var	breakXl = 1400,
-			breakLg = 1200,
-			breakMd = 1025,
-			breakSm = 769,
-			breakXs = 500;
 			
-
 	// Отмена перехода по ссылкам
 	$('a[href="#"]').click(function(e) {
 		e.preventDefault();
 	});
 
-	// Мобильное меню
-	// myMenu($('#menu'));
+	// Меню
+	menu($('#menu'));
 
 	// Блок с высотой окна браузера
 	// screenHeight($('#full-height'));
@@ -130,8 +129,9 @@ $(document).ready(function () {
 	// parallaxMove($('.parallax-move'));
 
 	// Отслеживание скролла окна браузера
-	$(window).scroll(function() {
+	$(window).scroll(function(event) {
 		// countNumber($(".count-number")); // Анимация увеличния значения числа
+		console.log(event);
 	});
 
 	// Отслеживание изменения ширины окна браузера
@@ -486,3 +486,45 @@ $(document).ready(function () {
 // 		};
 // 	});
 // };
+
+// Меню
+function menu(menu) {
+	var button = $('#menu-btn'),
+			close = menu.find('.menu_close'),
+			arrow = menu.find('.menu_arrow'),
+			items = menu.find('.menu_item'),
+			submenus = menu.find('.submenu');
+	// Открываем меню при клике по гамбургеру
+	button.click(function() {
+		menu.addClass('open');
+	});
+	// Закрываем меню при клике по крестику
+	close.click(function() {
+		menu.removeClass('open');
+	});
+	// Открываем подменю при клике по стрелке
+	arrow.click(function() {
+		if ($(window).width() < breakSm) {
+			var item = $(this).closest('.menu_item'),
+					submenu = $(this).next('.submenu');
+			if (item.hasClass('open')) {
+				item.removeClass('open');
+				submenu.removeClass('open');
+			}
+			else {
+				items.removeClass('open');
+				submenus.removeClass('open');
+				item.addClass('open');
+				submenu.addClass('open');
+			}
+		}
+	});
+	// Закрываем все, когда ширина окна больше мобильной
+	$(window).resize(function() {
+		if ($(window).width() >= breakSm) {
+			menu.removeClass('open');
+			items.removeClass('open');
+			submenus.removeClass('open');
+		}
+	});
+}

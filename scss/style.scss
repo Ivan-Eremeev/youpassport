@@ -16,7 +16,7 @@ $break_xl: 1400px;
 $break_lg: 1200px;
 $break_md: 1050px;
 $break_sm: 769px;
-$break_xs: 500px;
+$break_xs: 450px;
 
 // Переменные для кастомизации Bootstrap 4
 // $grid-gutter-width: 15px; // Отступы между колонками
@@ -27,9 +27,25 @@ $break_xs: 500px;
 
 // Шрифты
 // @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Light/ProximaNova-Light", 300, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular", 400, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold", 500, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold", 700, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Extrabld/ProximaNova-Extrabld", 800, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova/ProximaNova-Black/ProximaNova-Black", 900, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Thin/ProximaNovaCond-Thin", 200, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Light/ProximaNovaCond-Light", 300, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Regular/ProximaNovaCond-Regular", 400, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Semibold/ProximaNovaCond-Semibold", 500, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Bold/ProximaNovaCond-Bold", 700, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Extrabld/ProximaNovaCond-Extrabld", 800, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Black/ProximaNovaCond-Black", 900, normal);
 
 // Цвета
-// $black: #000;
+$black: #000;
+$red: #ef4836;
+$gray: #595959;
+$border: #dadada;
 
 // Блоки
 @import 'blocks/menu';
