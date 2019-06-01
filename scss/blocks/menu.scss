@@ -8,7 +8,6 @@
 	&_list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 	&_item {
 		flex-grow: 1;
@@ -242,6 +241,49 @@
 		&_sublink {
 			font-weight: normal;
 		}
+	}
+}
+.hamburger {
+	display: none;
+	padding: 10px 0 10px 10px;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	&-box {
+		width: 30px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+	}
+	&-inner:before,&-inner:after {
+		width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    display: block;
+	}
+	&-inner {
+		width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -1px;
+    &:before {
+    	content: '';
+    	top: -8px;
+    }
+    &:after {
+    	content: '';
+    	bottom: -8px;
+    }
+	}
+	@media (max-width: $break_sm) {
+		display: block;
 	}
 }
 // /menu

@@ -21,13 +21,13 @@
 
 // Брэйкпоинты js
 var	breakXl = 1400,
-		breakLg = 1200,
-		breakMd = 1025,
-		breakSm = 769,
-		breakXs = 500;
+breakLg = 1200,
+breakMd = 1025,
+breakSm = 769,
+breakXs = 500;
 
 $(document).ready(function () {
-			
+
 	// Отмена перехода по ссылкам
 	$('a[href="#"]').click(function(e) {
 		e.preventDefault();
@@ -35,6 +35,14 @@ $(document).ready(function () {
 
 	// Меню
 	menu($('#menu'));
+
+	// Показать еще новости
+	limitBlock($('#articles'));
+	limitBlock($('#articles2'));
+	limitBlock($('#articles3'));
+	limitBlock($('#articles4'));
+	limitBlock($('#articles5'));
+	limitBlock($('#articles6'));
 
 	// Блок с высотой окна браузера
 	// screenHeight($('#full-height'));
@@ -52,7 +60,7 @@ $(document).ready(function () {
 	// tabs($('#tabs'));
 
 	// Аккордеон
-	// accordeon($('#accordeon'));
+	accordeon($('#nav-accordeon'),true);
 
 	// matchHeight // Задание елементам одинаковой высоты
 	// $('.match-height').matchHeight();
@@ -129,24 +137,24 @@ $(document).ready(function () {
 	// parallaxMove($('.parallax-move'));
 
 	// Отслеживание скролла окна браузера
-	$(window).scroll(function(event) {
-		// countNumber($(".count-number")); // Анимация увеличния значения числа
-		console.log(event);
-	});
+	// $(window).scroll(function(event) {
+	// 	// countNumber($(".count-number")); // Анимация увеличния значения числа
+	// 	console.log(event);
+	// });
 
 	// Отслеживание изменения ширины окна браузера
-	var heightResized = false;
-	$(window).resize(function() {
-		var windowWidth = $(window).width();
-		if (heightResized == windowWidth) {
-			return;
-		}
-		heightResized = windowWidth;
-		// fontResize(); // Резиновый сайт
-		// screenHeight(); // Блок с высотой окна браузера
-		// tooltipDisable(); // Отключение всплывающей подсказки
-		// sliderReinstall(); // Реинициализация слайдеров
-	});
+	// var heightResized = false;
+	// $(window).resize(function() {
+	// 	var windowWidth = $(window).width();
+	// 	if (heightResized == windowWidth) {
+	// 		return;
+	// 	}
+	// 	heightResized = windowWidth;
+	// 	// fontResize(); // Резиновый сайт
+	// 	// screenHeight(); // Блок с высотой окна браузера
+	// 	// tooltipDisable(); // Отключение всплывающей подсказки
+	// 	// sliderReinstall(); // Реинициализация слайдеров
+	// });
 	
 });
 
@@ -240,27 +248,39 @@ $(document).ready(function () {
 // 	});
 // };
 
-// // Аккордеон
-// function accordeon(accordeon) {
-// 	var trigger = accordeon.find('.accordeon_trigger'),
-// 			content = accordeon.find('.accordeon_content'),
-// 			time = 300;
-// 	content.css({
-// 		display: 'none'});
-// 	trigger.on('click', function() {
-// 		$this = $(this);
-// 		if (!$this.hasClass('active')) {
-// 			trigger.removeClass('active');
-// 			$this.addClass('active');
-// 			content.stop().slideUp(time);
-// 			$this.next('.accordeon_content').stop().slideDown(time);
-// 		}
-// 		else {
-// 			$this.removeClass('active');
-// 			$this.next('.accordeon_content').stop().slideUp(time);
-// 		}
-// 	});
-// };
+// Аккордеон
+function accordeon(accordeon, mobile) {
+	var trigger = accordeon.find('.accordeon_trigger'),
+			content = accordeon.find('.accordeon_content'),
+			time = 300;
+	trigger.on('click', function() {
+		if ($(window).width() <= breakSm) {
+			$this = $(this);
+			if (!$this.hasClass('active')) {
+				trigger.removeClass('active');
+				$this.addClass('active');
+				content.stop().slideUp(time);
+				$this.next('.accordeon_content').stop().slideDown(time).removeClass('hide');
+			}
+			else {
+				$this.removeClass('active');
+				$this.next('.accordeon_content').stop().slideUp(time).addClass('hide');
+			}
+		}
+	});
+	if (mobile == true) {
+		$(window).resize(function() {
+			if ($(window).width() > breakSm) {
+				trigger.removeClass('active');
+				content.removeClass('hide')
+					.attr('style', '');
+			}
+			else {
+				content.addClass('hide')
+			}
+		});
+	}
+};
 
 // // Модальное окно
 // function modal(modal) {
@@ -490,10 +510,10 @@ $(document).ready(function () {
 // Меню
 function menu(menu) {
 	var button = $('#menu-btn'),
-			close = menu.find('.menu_close'),
-			arrow = menu.find('.menu_arrow'),
-			items = menu.find('.menu_item'),
-			submenus = menu.find('.submenu');
+	close = menu.find('.menu_close'),
+	arrow = menu.find('.menu_arrow'),
+	items = menu.find('.menu_item'),
+	submenus = menu.find('.submenu');
 	// Открываем меню при клике по гамбургеру
 	button.click(function() {
 		menu.addClass('open');
@@ -506,7 +526,7 @@ function menu(menu) {
 	arrow.click(function() {
 		if ($(window).width() < breakSm) {
 			var item = $(this).closest('.menu_item'),
-					submenu = $(this).next('.submenu');
+			submenu = $(this).next('.submenu');
 			if (item.hasClass('open')) {
 				item.removeClass('open');
 				submenu.removeClass('open');
@@ -527,6 +547,32 @@ function menu(menu) {
 			submenus.removeClass('open');
 		}
 	});
-}
+};
+
+// Показать еще новости
+function limitBlock(wrap) {
+	var news = wrap.find('.check-news'),
+			showBtn = wrap.find($('.show-more')),
+			showtext = showBtn.text(),
+			hidetext = "Скрыть";
+	showBtn.click(function() {
+		if (!wrap.hasClass('open')) {
+			wrap.addClass('open');
+			news.removeClass('hide');
+			showBtn.text(hidetext);
+		}
+		else {
+			wrap.removeClass('open');
+			news.addClass('hide');
+			showBtn.text(showtext);
+		}
+	});
+	$(window).resize(function() {
+		if ($(window).width() > breakSm) {
+			news.addClass('hide');
+			showBtn.text(showtext);
+		}
+	});
+};
 
 //# sourceMappingURL=script.js.map
