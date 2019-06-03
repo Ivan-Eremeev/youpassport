@@ -9,6 +9,15 @@ block content
 	
 	.content
 		
+		.wrapper
+			// breadcrumbs
+			#breadcrumbs.breadcrumbs
+				ul.breadcrumbs_list
+					li.breadcrumbs_item 
+						a(href="#").breadcrumbs_link Главная
+					li.breadcrumbs_item Временная регистрация
+			// /breadcrumbs
+
 		// hotline
 		#hotline.hotline
 			.wrapper
@@ -34,226 +43,10 @@ block content
 			
 			.wrapper
 
-				h1.title Вся информация о внутреннем и заграничном паспорте гражданина РФ
-
-				// articles
-				#articles.articles
-					h2.articles_title Получение и замена паспорта РФ
-					.row
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта PФ
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Получение паспорта РФ в 14 лет
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта PФ в 20 лет
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта PФ в 45 лет
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта PФ при порче
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта PФ при краже
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Замена паспорта при смене фамилии
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Что делать при потере паспорта
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Штраф за просроченный паспорт
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-1.jpg", alt="image")
-								.articles_name Госпошлина
-					a(href="#").show-more Показать еще
-					.articles_line.articles_line--red
-				// /articles
-
-				// articles
-				#articles2.articles
-					h2.articles_title Загранпаспорт РФ
-					.row
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Общие сведения
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Какой паспорт выбрать
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Паспорт нового образца
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Паспорт старого образца
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Заграничный паспорт для пенсионеров
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Список документов на загран паспорт
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Где оформить загранпаспорт
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Срочное оформление загранпаспорта
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Сроки изготовления и получения
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Проверка готовности
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Госпошлина
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Фото на загранпаспорт
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Оформление через Госуслуги
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Электронная очередь
-					a(href="#").show-more Показать еще
-					.articles_line.articles_line--blue
-				// /articles
-
-				// consultation
-				#consultation.consultation
-					.consultation_img.img-responsive
-						img(src="img/consultation.png", alt="image").mobile-hide
-						img(src="img/consultation-mob.png", alt="image").mobile-visible
-					.consultation_content
-						.consultation_font
-							.consultation_title Бесплатная консультация 
-								span.mobile-hide юристов
-							.consultation_text Помощь юриста по всем вопросам, касающихся паспортов РФ
-						a(href="#").consultation_btn.btn Получить консультацию
-				// /consultation
-
-				// articles
-				#articles3.articles
-					h2.articles_title Замена загранпаспорта
-					.row
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Замена загранпаспорта
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Замена заграна при смене фамилии
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Утеря загранпаспорта
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Продление срока загранпаспорта
-					a(href="#").show-more Показать еще
-					.articles_line.articles_line--green
-				// /articles
-
-				// articles
-				#articles4.articles
-					h2.articles_title Регистрационные вопросы
-					.row
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Прописка - общие сведения
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Отсутствие прописки и регистрации
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Штраф за отсутствие прописки
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Отличие прописки от временной регистрации
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Временная регистрация
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Регистрация по месту жительства
-					a(href="#").show-more Показать еще
-					.articles_line.articles_line--red
-				// /articles
+				h1.title Временная регистрация в России
 
 				// articles
 				#articles5.articles
-					h2.articles_title Временная регистрация
 					.row
 						.articles_col
 							a(href="#").articles_item
@@ -307,84 +100,6 @@ block content
 								.articles_name Все про выписку из домовой книги
 					a(href="#").show-more Показать еще
 					.articles_line.articles_line--green
-				// /articles
-
-				// articles
-				#articles6.articles
-					h2.articles_title РВП
-					.row
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name РВП - что это такое?
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Документы для получения РВП
-						.articles_col
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-3.jpg", alt="image")
-								.articles_name Заявление нового образца
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Требования к фото на РВП
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Разница между РВП и ВНЖ
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Новый закон с 2017 года
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Стоимость РВП
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Проверка готовности онлайн
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Проверить подлинность онлайн
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Онлайн запись на подачу документов
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Как получить РВП в России
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Продлить РВП находясь в России
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Перевод между регионами
-						.articles_col.check-news.hide
-							a(href="#").articles_item
-								.articles_img.img-responsive
-									img(src="img/article-2.jpg", alt="image")
-								.articles_name Уведомление о подтверждении РВП
-					a(href="#").show-more Показать еще
-					.articles_line.articles_line--violet
 				// /articles
 
 				.main_left-right
