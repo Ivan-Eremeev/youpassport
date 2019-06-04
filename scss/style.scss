@@ -36,6 +36,7 @@ $break_xs: 450px;
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Thin/ProximaNovaCond-Thin", 200, normal);
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Light/ProximaNovaCond-Light", 300, normal);
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Regular/ProximaNovaCond-Regular", 400, normal);
+@include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-RegularIt/ProximaNovaCond-RegularIt", 400, italic);
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Semibold/ProximaNovaCond-Semibold", 500, normal);
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Bold/ProximaNovaCond-Bold", 700, normal);
 @include font-face("ProximaNovaCond", "../fonts/ProximaNova/ProximaNovaCond-Extrabld/ProximaNovaCond-Extrabld", 800, normal);
@@ -46,6 +47,7 @@ $black: #000;
 $red: #ef4836;
 $gray: #595959;
 $border: #dadada;
+$green: #37AEA1;
 
 // Блоки
 @import 'blocks/menu';

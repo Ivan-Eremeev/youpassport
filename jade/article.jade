@@ -1,0 +1,587 @@
+extends blocks/base.jade
+
+block title 
+	title Главная
+
+block content
+
+	include blocks/header.jade
+	
+	.content
+		
+		.wrapper
+			// breadcrumbs
+			#breadcrumbs.breadcrumbs
+				ul.breadcrumbs_list
+					li.breadcrumbs_item 
+						a(href="#").breadcrumbs_link Главная
+					li.breadcrumbs_item 
+						a(href="#").breadcrumbs_link Временная регистрация
+					li.breadcrumbs_item Как сделать временную регистрацию в России
+			// /breadcrumbs
+
+		// hotline
+		#hotline.hotline
+			.wrapper
+				.hotline_block
+					.hotline_img.img-responsive
+						img(src="img/hotline-men.png", alt="men")
+					.hotline_content
+						.hotline_title Многоканальная бесплатная горячая линия
+						.hotline_text Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др. 
+						ul.hotline_list
+							li.hotline_item
+								a(href="tel:+74999385302").hotline_link +7 (499) 938-53-02
+								span.hotline_span Москва и МО
+							li.hotline_item
+								a(href="tel:+78124673705").hotline_link +7 (812) 467-37-05
+								span.hotline_span С-Петербург и ЛО
+							li.hotline_item
+								span.hotline_span Ежедневно с 9:00 до 21:00
+		// /hotline
+
+		// main
+		main#main.main
+			
+			.wrapper
+
+				.main_left-right
+
+					.main_left
+
+						h1.title Как сделать временную регистрацию в России (h1)  
+
+						p.text_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+
+						// scroll-block
+						#scroll-block.scroll-block
+							.scroll-block_left
+
+								// read-list
+								.read-list.read-list--green-border
+									.read-list_title.read-list_title--flag-green Содержание
+									ul.read-list_list.read-list_list--green-num
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+										li.read-list_item
+											a(href="#").read-list_link Lorem Ipsum используют потому что
+								// /read-list
+
+							.scroll-block_right
+
+								// accordeon-scroll
+								#accordeon-scroll.accordeon-scroll
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 1
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+											h3.accordeon-scroll_subtitle Подзаголовок
+											ul.accordeon-scroll_list
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы используют Lorem Ipsum в качестве текста;
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы используют Lorem Ipsum в качестве текста;
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы
+											.accordeon-scroll_img
+												img(src="img/content-image.jpg", alt="image")
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 2
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации 
+												a(href="#").accordeon-scroll_link "Здесь ваш текст.. Здесь ваш текст.. "
+											blockquote.blockquote
+												p При оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.
+												cite Подпись цитаты
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 3
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+											.center
+												a(href="#").accordeon-scroll_btn
+													span Скачать шаблон
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 4
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+											h3.accordeon-scroll_subtitle Подзаголовок
+											ul.accordeon-scroll_list
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы используют Lorem Ipsum в качестве текста;
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы используют Lorem Ipsum в качестве текста;
+												li.accordeon-scroll_item Многие программы электронной вёрстки и редакторы
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 5
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+											blockquote.warning
+												.warning_title Важно!
+												p Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное.
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+									.accordeon-scroll_block
+										h2.accordeon-scroll_title.accordeon_trigger Заголовок SEO блока
+											span.accordeon-scroll_num 6
+											span.accordeon-scroll_arrow.icon-keyboard_arrow_down
+										.accordeon-scroll_content.accordeon_content.hide
+											p.accordeon-scroll_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+											.center
+												a(href="#").accordeon-scroll_btn
+													span Скачать шаблон
+											.center
+												.accordeon-scroll_close.accordeon_close
+													span.accordeon-scroll_close-text Свернуть
+													span.accordeon-scroll_close-arrow.icon-keyboard_arrow_up
+								// /accordeon-scroll
+
+								// social
+								#social.social
+									.social_date 05.05.2019
+									.social_like
+										.social_ratio
+											span 8,7
+											|  из 10
+										.social_hands
+											a(href="#").social_hand
+												span.icon-thumbs-o-up
+											a(href="#").social_hand
+												span.icon-thumbs-o-down
+									.social_save Сохранить себе
+										a(href="#").social_icon.social_icon--vk
+											span.icon-vk
+										a(href="#").social_icon.social_icon--facebook
+											span.icon-facebook-square
+										a(href="#").social_icon.social_icon--twitter
+											span.icon-twitter-square
+										a(href="#").social_icon.social_icon--ok
+											span.icon-odnoklassniki-square
+										a(href="#").social_icon.social_icon--mailru
+											img(src="img/mailru-icon.svg", alt="icon")
+								// /social
+
+						// /scroll-block
+
+					.main_right.main_right--b
+						
+						// read-list
+						.read-list
+							.read-list_title.read-list_title--flag-green Временная регистрация
+							ul.read-list_list.read-list_list--green-line
+								li.read-list_item
+									a(href="#").read-list_link Общие вопросы по временной регистрации
+								li.read-list_item
+									a(href="#").read-list_link Как сделать временную регистрацию
+								li.read-list_item
+									a(href="#").read-list_link Срок действия<br>Регистрация ребенка
+								li.read-list_item
+									a(href="#").read-list_link Чем опасна для собственника
+						// /read-list
+
+						// free-consult
+						#free-consult.free-consult
+							.free-consult_title Бесплатная консультация
+							.free-consult_text Помощь юриста по всем вопросам, касающихся паспортов 
+								span.mobile-hide Российской Федерации
+								span.mobile-visible РФ
+							a(href="#").free-consult_btn.btn Получить консультацию
+							.free-consult_img
+								img(src="img/statue.png", alt="statue")
+						// /free-consult
+
+			.wrapper
+				// articles
+				#articles8.articles
+					h2.articles_title Читайте также
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Общие вопросы по временной регистрации
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Как сделать временную регистрацию
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Срок действия
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Регистрация ребенка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Чем опасна для собственника
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Выписка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Снятие с регистрацион- ного учета по месту жительства
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Процедура выписки
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Выписка через суд
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--green
+				// /articles
+
+				// faq
+				#faq.faq
+					.faq_line.faq_line--red
+					h2.faq_title Вопросы и комметарии
+					.faq_content
+						.comment.limit-block
+							.comment_head
+								.comment_img.img-responsive
+									img(src="img/comment-portret.jpg", alt="portret")
+								.comment_name Елизавета Олейникова
+								a(href="#").comment_link Ответить
+									span.icon-redo2
+								.comment_date 26.03.2018
+							.comment_text Постирала паспорт. Лучше сказать, что постирала или украли?
+								.comment
+									.comment_head
+										.comment_img.img-responsive
+											img(src="img/comment-portret.jpg", alt="portret")
+										.comment_name Александр (ответов 1 059)
+										a(href="#").comment_link Ответить
+											span.icon-redo2
+										.comment_date 26.03.2018
+									.comment_text Лучше скажите, что постирали. Вне зависимости от причины вам нужно будет оплатить штраф сограсно ст. 19.16. КоАП РФ
+						.comment.limit-block
+							.comment_head
+								.comment_img.img-responsive
+									img(src="img/comment-portret.jpg", alt="portret")
+								.comment_name Елизавета Олейникова
+								a(href="#").comment_link Ответить
+									span.icon-redo2
+								.comment_date 26.03.2018
+							.comment_text Постирала паспорт. Лучше сказать, что постирала или украли?
+								.comment
+									.comment_head
+										.comment_img.img-responsive
+											img(src="img/comment-portret.jpg", alt="portret")
+										.comment_name Александр (ответов 1 059)
+										a(href="#").comment_link Ответить
+											span.icon-redo2
+										.comment_date 26.03.2018
+									.comment_text Лучше скажите, что постирали. Вне зависимости от причины вам нужно будет оплатить штраф сограсно ст. 19.16. КоАП РФ
+					.faq_show-btn.show-btn
+						a(href="#") Еще комментарии
+				// /faq
+
+				// articles
+				#articles9.articles
+					h2.articles_title Статьи по теме
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Общие вопросы по временной регистрации
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Как сделать временную регистрацию
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Срок действия
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Регистрация ребенка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Чем опасна для собственника
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Выписка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Снятие с регистрацион- ного учета по месту жительства
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Процедура выписки
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Выписка через суд
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--green
+				// /articles
+
+				// consultation
+				#consultation.consultation
+					.consultation_img.img-responsive
+						img(src="img/consultation.png", alt="image").mobile-hide
+						img(src="img/consultation-mob.png", alt="image").mobile-visible
+					.consultation_content
+						.consultation_font
+							.consultation_title Бесплатная консультация 
+								span.mobile-hide юристов
+							.consultation_text Помощь юриста по всем вопросам, касающихся паспортов РФ
+						a(href="#").consultation_btn.btn Получить консультацию
+				// /consultation
+
+			// nav-accordeon
+			#nav-accordeon.nav-accordeon
+				.wrapper
+					.row
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Внутренний паспорт РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ (общие сведения)
+									li.nav-block_item
+										a(href="#").nav-block_link Получение паспорта РФ в 14 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ в 20 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ в 45 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ при порче
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ при краже
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта при смене фамилии
+									li.nav-block_item
+										a(href="#").nav-block_link Что делать при потере паспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Госпошлина
+									li.nav-block_item
+										a(href="#").nav-block_link Штраф за просроченный паспорт
+							.nav-block
+								.nav-block_title.accordeon_trigger Общие сведения о паспорте РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Все про код подразделения выдавшего паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Серия и номер паспорта РФ
+									li.nav-block_item
+										a(href="#").nav-block_link Как узнать кем выдан паспорт РФ
+									li.nav-block_item
+										a(href="#").nav-block_link Требования для фото на паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Как проверить готовность паспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Что делать если украли паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Как поменять прописку в паспорте
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка паспорта на действительность
+									li.nav-block_item
+										a(href="#").nav-block_link Как и где вписать ребенка в паспорт
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Загранпаспорт РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Общие сведения
+									li.nav-block_item
+										a(href="#").nav-block_link Какой паспорт выбрать
+									li.nav-block_item
+										a(href="#").nav-block_link Паспорт нового образца
+									li.nav-block_item
+										a(href="#").nav-block_link Паспорт старого образца
+									li.nav-block_item
+										a(href="#").nav-block_link Заграничный паспорт для пенсионеров
+									li.nav-block_item
+										a(href="#").nav-block_link Список документов на загран
+									li.nav-block_item
+										a(href="#").nav-block_link Где оформить загранпаспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Срочное оформление
+									li.nav-block_item
+										a(href="#").nav-block_link Сроки изготовления и получения
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка готовности
+									li.nav-block_item
+										a(href="#").nav-block_link Госпошлина
+									li.nav-block_item
+										a(href="#").nav-block_link Фото на загранпаспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Оформление через Госуслуги
+									li.nav-block_item
+										a(href="#").nav-block_link Электронная очередь
+									li.nav-block_item
+										a(href="#").nav-block_link Замена загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Замена загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Замена заграна при смене фамилии
+									li.nav-block_item
+										a(href="#").nav-block_link Утеря загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Продление срока загранпаспорта
+							.nav-block
+								.nav-block_title.accordeon_trigger Регистрационные вопросы
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Прописка - общие сведения
+									li.nav-block_item
+										a(href="#").nav-block_link Отсутствие прописки и регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Штраф за отсутствие прописки
+									li.nav-block_item
+										a(href="#").nav-block_link Отличие прописки от временной регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Временная регистрация
+									li.nav-block_item
+										a(href="#").nav-block_link Регистрация по месту жительства
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Временная регистрация
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Общие вопросы по временной регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Как сделать временную регистрацию
+									li.nav-block_item
+										a(href="#").nav-block_link Срок действия
+									li.nav-block_item
+										a(href="#").nav-block_link Регистрация ребенка
+									li.nav-block_item
+										a(href="#").nav-block_link Чем опасна для собственника
+							.nav-block
+								.nav-block_title.accordeon_trigger Выписка
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Снятие с регистрационного учета по месту жительства
+									li.nav-block_item
+										a(href="#").nav-block_link Процедура выписки
+									li.nav-block_item
+										a(href="#").nav-block_link Выписка через суд
+									li.nav-block_item
+										a(href="#").nav-block_link Все про выписку из домовой книги
+							.nav-block
+								.nav-block_title.accordeon_trigger РВП
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link РВП - что это такое?
+									li.nav-block_item
+										a(href="#").nav-block_link Документы для получения РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Заявление нового образца
+									li.nav-block_item
+										a(href="#").nav-block_link Требования к фото на РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Разница между РВП и ВНЖ
+									li.nav-block_item
+										a(href="#").nav-block_link Новый закон с 2017 года
+									li.nav-block_item
+										a(href="#").nav-block_link Стоимость РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка готовности онлайн
+									li.nav-block_item
+										a(href="#").nav-block_link Проверить подлинность онлайн
+									li.nav-block_item
+										a(href="#").nav-block_link Онлайн запись на подачу документов
+									li.nav-block_item
+										a(href="#").nav-block_link Как получить РВП в России
+									li.nav-block_item
+										a(href="#").nav-block_link Продлить РВП находясь в России
+									li.nav-block_item
+										a(href="#").nav-block_link Перевод между регионами
+									li.nav-block_item
+										a(href="#").nav-block_link Уведомление о подтверждении РВП
+			// /nav-accordeon
+			
+		// /main
+
+		// info
+		.wrapper
+			#info.info--b.info.info--b
+				.logo.logo--b
+					a(href="#").logo_img.logo_img--b
+						img(src="img/logo.svg", alt="logo")
+					.logo_content.logo_content--b
+						a(href="#").logo_title.logo_title--b youpassport.ru
+						.logo_text.logo_text--b Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др.
+				.callback.callback--b
+					a(href="#").callback_btn.callback_btn--b.btn Обратная связь
+					.callback_text.callback_text--b г. Москва, Пролетарский проспект 135 корпус 2, офис 357
+		// /info
+		
+	include blocks/footer.jade
+
+block js
+	script(src="js/jquery-3.2.1.min.js")
+	//- script(src="js/jquery.fancybox.min.js")
+	//- script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.bundle.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	//- script(src="js/jquery.vide.min.js")
+	//- script(src="js/jquery.scrollbar.min.js")
+	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
+	script(src="js/script.js")

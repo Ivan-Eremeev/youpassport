@@ -43,6 +43,10 @@ $(document).ready(function () {
 	limitBlock($('#articles4'));
 	limitBlock($('#articles5'));
 	limitBlock($('#articles6'));
+	limitBlock($('#articles7'));
+	limitBlock($('#articles8'));
+	limitBlock($('#articles9'));
+	limitBlock($('#faq'),1);
 
 	// Блок с высотой окна браузера
 	// screenHeight($('#full-height'));
@@ -61,6 +65,7 @@ $(document).ready(function () {
 
 	// Аккордеон
 	accordeon($('#nav-accordeon'),true);
+	accordeon($('#accordeon-scroll'),true);
 
 	// matchHeight // Задание елементам одинаковой высоты
 	// $('.match-height').matchHeight();
@@ -252,6 +257,7 @@ $(document).ready(function () {
 function accordeon(accordeon, mobile) {
 	var trigger = accordeon.find('.accordeon_trigger'),
 			content = accordeon.find('.accordeon_content'),
+			close = accordeon.find('.accordeon_close');
 			time = 300;
 	trigger.on('click', function() {
 		if ($(window).width() <= breakSm) {
@@ -267,6 +273,10 @@ function accordeon(accordeon, mobile) {
 				$this.next('.accordeon_content').stop().slideUp(time).addClass('hide');
 			}
 		}
+	});
+	close.on('click', function() {
+		trigger.removeClass('active');
+		content.stop().slideUp(time).addClass('hide');
 	});
 	if (mobile == true) {
 		$(window).resize(function() {
@@ -514,15 +524,12 @@ function menu(menu) {
 	arrow = menu.find('.menu_arrow'),
 	items = menu.find('.menu_item'),
 	submenus = menu.find('.submenu');
-	// Открываем меню при клике по гамбургеру
 	button.click(function() {
 		menu.addClass('open');
 	});
-	// Закрываем меню при клике по крестику
 	close.click(function() {
 		menu.removeClass('open');
 	});
-	// Открываем подменю при клике по стрелке
 	arrow.click(function() {
 		if ($(window).width() < breakSm) {
 			var item = $(this).closest('.menu_item'),
@@ -539,7 +546,6 @@ function menu(menu) {
 			}
 		}
 	});
-	// Закрываем все, когда ширина окна больше мобильной
 	$(window).resize(function() {
 		if ($(window).width() >= breakSm) {
 			menu.removeClass('open');
@@ -550,27 +556,48 @@ function menu(menu) {
 };
 
 // Показать еще новости
-function limitBlock(wrap) {
-	var news = wrap.find('.check-news'),
-			showBtn = wrap.find($('.show-more')),
-			showtext = showBtn.text(),
-			hidetext = "Скрыть";
-	showBtn.click(function() {
-		if (!wrap.hasClass('open')) {
-			wrap.addClass('open');
-			news.removeClass('hide');
-			showBtn.text(hidetext);
-		}
-		else {
-			wrap.removeClass('open');
-			news.addClass('hide');
-			showBtn.text(showtext);
-		}
-	});
+function limitBlock(wrap, newsNum) {
+	if (!newsNum) {
+		newsNum = 3
+	}
+	var news = wrap.find('.limit-block'),
+			parent = news.parent(),
+			newsLimit = news.slice(0, newsNum),
+			btn = wrap.find('.show-btn'),
+			btnShow = btn.text(),
+			btnHide = 'Скрыть',
+			heightResized = false;
+	width();
 	$(window).resize(function() {
-		if ($(window).width() > breakSm) {
-			news.addClass('hide');
-			showBtn.text(showtext);
+		var windowWidth = $(window).width();
+		if (heightResized == windowWidth) {
+			return;
+		}
+		heightResized = windowWidth;
+		width();
+	});
+	function width() {
+		if ($(window).width() <= breakSm) {
+			news.remove();
+			parent.append(newsLimit);
+			btn.text(btnShow)
+				.removeClass('active');
+		}else {
+			parent.append(news);
+			btn.text(btnHide)
+				.addClass('active');
+		}
+	};
+	btn.click(function() {
+		if (!btn.hasClass('active')) {
+			parent.append(news);
+			btn.text(btnHide)
+				.addClass('active');
+		}else {
+			news.remove();
+			parent.append(newsLimit);
+			btn.text(btnShow)
+				.removeClass('active');
 		}
 	});
 };
