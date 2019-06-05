@@ -565,6 +565,7 @@ h3 {
 	border: 1px solid $border;
 	border-radius: 5px;
 	&--green-border {
+		width: 262px;
 		border-color: $green;
 	}
 	&_title {
@@ -702,6 +703,13 @@ h3 {
 		color: $black;
 		&:hover {
 			color: $red;
+		}
+	}
+	@media (min-width: $break_sm) {
+		&_link {
+			&.active {
+				color: $red;
+			}
 		}
 	}
 }

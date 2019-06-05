@@ -1025,6 +1025,7 @@ h3 {
   border: 1px solid #dadada;
   border-radius: 5px; }
   .read-list--green-border {
+    width: 262px;
     border-color: #37AEA1; }
   .read-list_title {
     margin-bottom: 17px;
@@ -1112,6 +1113,9 @@ h3 {
     color: #000; }
     .read-list_link:hover {
       color: #ef4836; }
+  @media (min-width: 769px) {
+    .read-list_link.active {
+      color: #ef4836; } }
 
 .free-consult {
   padding: 32px 30px 48px;
