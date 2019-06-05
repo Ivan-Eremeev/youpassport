@@ -316,8 +316,6 @@ h1, h2, h3 {
         -o-transition: .3s;
         transition: .3s;
         overflow: auto; }
-        .menu_nav a {
-          color: #000; }
       .menu_item {
         width: 100%;
         position: relative;
@@ -338,7 +336,8 @@ h1, h2, h3 {
           transform: rotate(0deg); }
       .menu_link {
         padding: 15px 0;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #000; }
       .menu_arrow {
         position: static;
         padding: 15px;
@@ -420,10 +419,14 @@ h1, h2, h3 {
       background-color: #ef4836;
       position: absolute;
       left: 0;
-      top: 50%; }
+      top: 12px; }
   .submenu_sublink {
     white-space: normal;
-    font-weight: 500; }
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s; }
+    .submenu_sublink:hover {
+      color: #ef4836; }
   .submenu_img {
     text-align: right; }
     .submenu_img img {
@@ -443,9 +446,7 @@ h1, h2, h3 {
       .submenu_item {
         width: 100%; }
       .submenu_img {
-        text-align: center; }
-      .submenu_sublink {
-        font-weight: normal; } }
+        text-align: center; } }
 
 .hamburger {
   display: none;
@@ -483,6 +484,17 @@ h1, h2, h3 {
       bottom: -8px; }
   @media (max-width: 769px) {
     .hamburger {
+      display: block; } }
+
+.menu-footer {
+  display: none;
+  padding: 30px 15px;
+  margin: 20px -25px 0;
+  border-top: 2px solid #ef4836; }
+  .menu-footer_btn {
+    margin-bottom: 20px; }
+  @media (max-width: 769px) {
+    .menu-footer {
       display: block; } }
 
 html {
@@ -1118,7 +1130,7 @@ h3 {
       color: #ef4836; } }
 
 .free-consult {
-  padding: 32px 30px 48px;
+  padding: 32px 80px 48px 30px;
   background: url(../img/free-consult-bg.jpg) center;
   background-size: cover;
   position: relative; }
@@ -1145,7 +1157,7 @@ h3 {
       right: -10px; } }
   @media (max-width: 450px) {
     .free-consult {
-      padding: 32px 30px 15px;
+      padding: 32px 60px 15px 30px;
       margin-bottom: 20px; }
       .free-consult_title {
         padding-right: 30px; }
@@ -1347,8 +1359,7 @@ h3 {
   .comment .comment {
     padding: 30px 40px 38px 30px;
     margin-top: 24px;
-    border-top: 1px solid #dadada;
-    border-left: 1px solid #dadada;
+    border: 1px solid #dadada;
     border-radius: 5px; }
   @media (max-width: 769px) {
     .comment_head {
@@ -1519,7 +1530,7 @@ h3 {
       padding-left: 15px;
       padding-right: 15px; }
     .accordeon-scroll_title {
-      padding: 30px 15px 0px 57px; }
+      padding: 30px 30px 0px 57px; }
       .accordeon-scroll_title.active .accordeon-scroll_arrow {
         -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
@@ -1631,6 +1642,12 @@ h3 {
     border: 1px solid #dadada;
     border-radius: 3px;
     color: #dadada; }
+    .social_hand--green:hover {
+      color: #37AEA1;
+      border-color: #37AEA1; }
+    .social_hand--red:hover {
+      color: #ef4836;
+      border-color: #ef4836; }
   .social_save {
     display: -webkit-box;
     display: -ms-flexbox;

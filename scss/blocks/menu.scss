@@ -94,9 +94,6 @@
 			z-index: 101;
 			transition: .3s;
 			overflow: auto;
-			a {
-				color: #000;
-			}
 		}
 		&_item {
 			width: 100%;
@@ -116,11 +113,12 @@
 		&_link {
 			padding: 15px 0;
 			font-weight: bold;
+			color: $black;
 		}
 		&_arrow {
 			position: static;
 			padding: 15px;
-			color: #000;
+			color: $black;
 			font-size: 20px;
 			transform: translate(0);
 			&:before {
@@ -204,12 +202,15 @@
 			background-color: $red;
 			position: absolute;
 			left: 0;
-			top: 50%;
+			top: 12px;
 		}
 	}
 	&_sublink {
 		white-space: normal;
-		font-weight: 500;
+		transition: .1s;
+		&:hover {
+			color: $red;
+		}
 	}
 	&_img {
 		text-align: right;
@@ -237,9 +238,6 @@
 		}
 		&_img {
 			text-align: center;
-		}
-		&_sublink {
-			font-weight: normal;
 		}
 	}
 }
@@ -281,6 +279,18 @@
     	content: '';
     	bottom: -8px;
     }
+	}
+	@media (max-width: $break_sm) {
+		display: block;
+	}
+}
+.menu-footer {
+	display: none;
+	padding: 30px 15px;
+	margin: 20px -25px 0;
+	border-top: 2px solid $red;
+	&_btn {
+		margin-bottom: 20px;
 	}
 	@media (max-width: $break_sm) {
 		display: block;

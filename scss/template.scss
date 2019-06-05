@@ -717,7 +717,7 @@ h3 {
 
 // free-consult
 .free-consult {
-	padding: 32px 30px 48px;
+	padding: 32px 80px 48px 30px;
 	background: url(../img/free-consult-bg.jpg) center;
 	background-size: cover;
 	position: relative;
@@ -749,7 +749,7 @@ h3 {
 		}
 	}
 	@media (max-width: $break_xs) {
-		padding: 32px 30px 15px;
+		padding: 32px 60px 15px 30px;
 		margin-bottom: 20px;
 		&_title {
 			padding-right: 30px;
@@ -988,8 +988,7 @@ h3 {
 	.comment {
 		padding: 30px 40px 38px 30px;
 		margin-top: 24px;
-		border-top: 1px solid $border;
-		border-left: 1px solid $border;
+		border: 1px solid $border;
 		border-radius: 5px;
 	}
 	@media (max-width: $break_sm) {
@@ -1171,7 +1170,7 @@ h3 {
 			padding-right: 15px;
 		}
 		&_title {
-			padding: 30px 15px 0px 57px;
+			padding: 30px 30px 0px 57px;
 			&.active {
 				.accordeon-scroll_arrow {
 					transform: rotate(0);
@@ -1290,6 +1289,18 @@ h3 {
 		border: 1px solid $border;
 		border-radius: 3px;
 		color: $border;
+		&--green {
+			&:hover {
+				color: $green;
+				border-color: $green;
+			}
+		}
+		&--red {
+			&:hover {
+				color: $red;
+				border-color: $red;
+			}
+		}
 	}
 	&_save {
 		display: flex;
