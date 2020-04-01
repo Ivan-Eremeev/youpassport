@@ -1348,3 +1348,19 @@ h3 {
 	}
 }
 // /social
+
+// index-menu
+.index-menu {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&_item {
+		
+	}
+	&_link {
+		margin: 10px;
+	}
+}
+// /index-menu

@@ -1,0 +1,658 @@
+extends blocks/base.jade
+
+block title 
+	title Главная
+
+block content
+
+	include blocks/header.jade
+	
+	.content
+		
+		// hotline
+		#hotline.hotline
+			.wrapper
+				.hotline_block
+					.hotline_img.img-responsive
+						img(src="img/hotline-men.png", alt="men")
+					.hotline_content
+						.hotline_title Многоканальная бесплатная горячая линия
+						.hotline_text Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др. 
+						ul.hotline_list
+							li.hotline_item
+								a(href="tel:+74999385302").hotline_link +7 (499) 938-53-02
+								span.hotline_span Москва и МО
+							li.hotline_item
+								a(href="tel:+78124673705").hotline_link +7 (812) 467-37-05
+								span.hotline_span С-Петербург и ЛО
+							li.hotline_item
+								span.hotline_span Ежедневно с 9:00 до 21:00
+		// /hotline
+
+		// main
+		main#main.main
+			
+			.wrapper
+
+				h1.title Вся информация о внутреннем и заграничном паспорте гражданина РФ
+
+				// articles
+				#articles.articles
+					h2.articles_title Получение и замена паспорта РФ
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта PФ
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Получение паспорта РФ в 14 лет
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта PФ в 20 лет
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта PФ в 45 лет
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта PФ при порче
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта PФ при краже
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Замена паспорта при смене фамилии
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Что делать при потере паспорта
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Штраф за просроченный паспорт
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-1.jpg", alt="image")
+								.articles_name Госпошлина
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--red
+				// /articles
+
+				// articles
+				#articles2.articles
+					h2.articles_title Загранпаспорт РФ
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Общие сведения
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Какой паспорт выбрать
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Паспорт нового образца
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Паспорт старого образца
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Заграничный паспорт для пенсионеров
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Список документов на загран паспорт
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Где оформить загранпаспорт
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Срочное оформление загранпаспорта
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Сроки изготовления и получения
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Проверка готовности
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Госпошлина
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Фото на загранпаспорт
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Оформление через Госуслуги
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Электронная очередь
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--blue
+				// /articles
+
+				// consultation
+				#consultation.consultation
+					.consultation_img.img-responsive
+						img(src="img/consultation.png", alt="image").mobile-hide
+						img(src="img/consultation-mob.png", alt="image").mobile-visible
+					.consultation_content
+						.consultation_font
+							.consultation_title Бесплатная консультация 
+								span.mobile-hide юристов
+							.consultation_text Помощь юриста по всем вопросам, касающихся паспортов РФ
+						a(href="#").consultation_btn.btn Получить консультацию
+				// /consultation
+
+				// articles
+				#articles3.articles
+					h2.articles_title Замена загранпаспорта
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Замена загранпаспорта
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Замена заграна при смене фамилии
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Утеря загранпаспорта
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Продление срока загранпаспорта
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--green
+				// /articles
+
+				// articles
+				#articles4.articles
+					h2.articles_title Регистрационные вопросы
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Прописка - общие сведения
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Отсутствие прописки и регистрации
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Штраф за отсутствие прописки
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Отличие прописки от временной регистрации
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Временная регистрация
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Регистрация по месту жительства
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--red
+				// /articles
+
+				// articles
+				#articles5.articles
+					h2.articles_title Временная регистрация
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Общие вопросы по временной регистрации
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Как сделать временную регистрацию
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Срок действия
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Регистрация ребенка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Чем опасна для собственника
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Выписка
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Снятие с регистрацион- ного учета по месту жительства
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Процедура выписки
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Выписка через суд
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Все про выписку из домовой книги
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--green
+				// /articles
+
+				// articles
+				#articles6.articles
+					h2.articles_title РВП
+					.row
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name РВП - что это такое?
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Документы для получения РВП
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-3.jpg", alt="image")
+								.articles_name Заявление нового образца
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Требования к фото на РВП
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Разница между РВП и ВНЖ
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Новый закон с 2017 года
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Стоимость РВП
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Проверка готовности онлайн
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Проверить подлинность онлайн
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Онлайн запись на подачу документов
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Как получить РВП в России
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Продлить РВП находясь в России
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Перевод между регионами
+						.articles_col.limit-block
+							a(href="#").articles_item
+								.articles_img.img-responsive
+									img(src="img/article-2.jpg", alt="image")
+								.articles_name Уведомление о подтверждении РВП
+					a(href="#").show-more.show-btn Показать еще
+					.articles_line.articles_line--violet
+				// /articles
+
+				.main_left-right
+
+					.main_left
+
+						// text
+						#text.text
+							h2.text_title Заголовок SEO блока
+							p.text_text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+							.text_subtitle Откуда он появился?
+							p.text_text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+							p.text_text Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
+							.text_subtitle Где его взять?
+							p.text_text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
+
+						// /text
+
+					.main_right
+						
+						// read-list
+						.read-list
+							.read-list_title.read-list_title--flag-red Читайте также:
+							ul.read-list_list.read-list_list--red-line
+								li.read-list_item
+									a(href="#").read-list_link Какой паспорт выбрать
+								li.read-list_item
+									a(href="#").read-list_link Паспорт нового образца
+								li.read-list_item
+									a(href="#").read-list_link Паспорт старого образца
+								li.read-list_item
+									a(href="#").read-list_link Заграничный паспорт для пенсионеров
+								li.read-list_item
+									a(href="#").read-list_link Список документов на загранпаспорт
+								li.read-list_item
+									a(href="#").read-list_link Где оформить загранпаспорт
+								li.read-list_item
+									a(href="#").read-list_link Срочное оформление
+								li.read-list_item
+									a(href="#").read-list_link Сроки изготовления и получения
+								li.read-list_item
+									a(href="#").read-list_link Проверка готовности
+								li.read-list_item
+									a(href="#").read-list_link Госпошлина
+								li.read-list_item
+									a(href="#").read-list_link Фото на загранпаспорт
+								li.read-list_item
+									a(href="#").read-list_link Оформление через Госуслуги
+								li.read-list_item
+									a(href="#").read-list_link Электронная очередь
+								li.read-list_item
+									a(href="#").read-list_link Замена загранпаспорта
+								li.read-list_item
+									a(href="#").read-list_link Замена загранпаспорта
+								li.read-list_item
+									a(href="#").read-list_link Замена заграна при смене фамилии
+								li.read-list_item
+									a(href="#").read-list_link Утеря загранпаспорта
+								li.read-list_item
+									a(href="#").read-list_link Продление срока загранпаспорта
+						// /read-list
+
+						// free-consult
+						#free-consult.free-consult
+							.free-consult_title Бесплатная консультация
+							.free-consult_text Помощь юриста по всем вопросам, касающихся паспортов 
+								span.mobile-hide Российской Федерации
+								span.mobile-visible РФ
+							a(href="#").free-consult_btn.btn Получить консультацию
+							.free-consult_img
+								img(src="img/statue.png", alt="statue")
+						// /free-consult
+
+			// nav-accordeon
+			#nav-accordeon.nav-accordeon
+				.wrapper
+					.row
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Внутренний паспорт РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ (общие сведения)
+									li.nav-block_item
+										a(href="#").nav-block_link Получение паспорта РФ в 14 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ в 20 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ в 45 лет
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ при порче
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта РФ при краже
+									li.nav-block_item
+										a(href="#").nav-block_link Замена паспорта при смене фамилии
+									li.nav-block_item
+										a(href="#").nav-block_link Что делать при потере паспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Госпошлина
+									li.nav-block_item
+										a(href="#").nav-block_link Штраф за просроченный паспорт
+							.nav-block
+								.nav-block_title.accordeon_trigger Общие сведения о паспорте РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Все про код подразделения выдавшего паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Серия и номер паспорта РФ
+									li.nav-block_item
+										a(href="#").nav-block_link Как узнать кем выдан паспорт РФ
+									li.nav-block_item
+										a(href="#").nav-block_link Требования для фото на паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Как проверить готовность паспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Что делать если украли паспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Как поменять прописку в паспорте
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка паспорта на действительность
+									li.nav-block_item
+										a(href="#").nav-block_link Как и где вписать ребенка в паспорт
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Загранпаспорт РФ
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Общие сведения
+									li.nav-block_item
+										a(href="#").nav-block_link Какой паспорт выбрать
+									li.nav-block_item
+										a(href="#").nav-block_link Паспорт нового образца
+									li.nav-block_item
+										a(href="#").nav-block_link Паспорт старого образца
+									li.nav-block_item
+										a(href="#").nav-block_link Заграничный паспорт для пенсионеров
+									li.nav-block_item
+										a(href="#").nav-block_link Список документов на загран
+									li.nav-block_item
+										a(href="#").nav-block_link Где оформить загранпаспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Срочное оформление
+									li.nav-block_item
+										a(href="#").nav-block_link Сроки изготовления и получения
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка готовности
+									li.nav-block_item
+										a(href="#").nav-block_link Госпошлина
+									li.nav-block_item
+										a(href="#").nav-block_link Фото на загранпаспорт
+									li.nav-block_item
+										a(href="#").nav-block_link Оформление через Госуслуги
+									li.nav-block_item
+										a(href="#").nav-block_link Электронная очередь
+									li.nav-block_item
+										a(href="#").nav-block_link Замена загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Замена загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Замена заграна при смене фамилии
+									li.nav-block_item
+										a(href="#").nav-block_link Утеря загранпаспорта
+									li.nav-block_item
+										a(href="#").nav-block_link Продление срока загранпаспорта
+							.nav-block
+								.nav-block_title.accordeon_trigger Регистрационные вопросы
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Прописка - общие сведения
+									li.nav-block_item
+										a(href="#").nav-block_link Отсутствие прописки и регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Штраф за отсутствие прописки
+									li.nav-block_item
+										a(href="#").nav-block_link Отличие прописки от временной регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Временная регистрация
+									li.nav-block_item
+										a(href="#").nav-block_link Регистрация по месту жительства
+						.nav-accordeon_col
+							.nav-block
+								.nav-block_title.accordeon_trigger Временная регистрация
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Общие вопросы по временной регистрации
+									li.nav-block_item
+										a(href="#").nav-block_link Как сделать временную регистрацию
+									li.nav-block_item
+										a(href="#").nav-block_link Срок действия
+									li.nav-block_item
+										a(href="#").nav-block_link Регистрация ребенка
+									li.nav-block_item
+										a(href="#").nav-block_link Чем опасна для собственника
+							.nav-block
+								.nav-block_title.accordeon_trigger Выписка
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link Снятие с регистрационного учета по месту жительства
+									li.nav-block_item
+										a(href="#").nav-block_link Процедура выписки
+									li.nav-block_item
+										a(href="#").nav-block_link Выписка через суд
+									li.nav-block_item
+										a(href="#").nav-block_link Все про выписку из домовой книги
+							.nav-block
+								.nav-block_title.accordeon_trigger РВП
+								ul.nav-block_list.hide.accordeon_content
+									li.nav-block_item
+										a(href="#").nav-block_link РВП - что это такое?
+									li.nav-block_item
+										a(href="#").nav-block_link Документы для получения РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Заявление нового образца
+									li.nav-block_item
+										a(href="#").nav-block_link Требования к фото на РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Разница между РВП и ВНЖ
+									li.nav-block_item
+										a(href="#").nav-block_link Новый закон с 2017 года
+									li.nav-block_item
+										a(href="#").nav-block_link Стоимость РВП
+									li.nav-block_item
+										a(href="#").nav-block_link Проверка готовности онлайн
+									li.nav-block_item
+										a(href="#").nav-block_link Проверить подлинность онлайн
+									li.nav-block_item
+										a(href="#").nav-block_link Онлайн запись на подачу документов
+									li.nav-block_item
+										a(href="#").nav-block_link Как получить РВП в России
+									li.nav-block_item
+										a(href="#").nav-block_link Продлить РВП находясь в России
+									li.nav-block_item
+										a(href="#").nav-block_link Перевод между регионами
+									li.nav-block_item
+										a(href="#").nav-block_link Уведомление о подтверждении РВП
+			// /nav-accordeon
+			
+		// /main
+
+		// info
+		.wrapper
+			#info.info--b.info.info--b
+				.logo.logo--b
+					a(href="#").logo_img.logo_img--b
+						img(src="img/logo.svg", alt="logo")
+					.logo_content.logo_content--b
+						a(href="#").logo_title.logo_title--b youpassport.ru
+						.logo_text.logo_text--b Бесплатные юридические консультации и помощь в получении паспорта, загранпаспорта, РВП, вида на жительство и др.
+				.callback.callback--b
+					a(href="#").callback_btn.callback_btn--b.btn Обратная связь
+					.callback_text.callback_text--b г. Москва, Пролетарский проспект 135 корпус 2, офис 357
+		// /info
+		
+	include blocks/footer.jade
+
+block js
+	script(src="js/jquery-3.2.1.min.js")
+	//- script(src="js/jquery.fancybox.min.js")
+	//- script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.bundle.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	//- script(src="js/jquery.vide.min.js")
+	//- script(src="js/jquery.scrollbar.min.js")
+	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
+	script(src="js/script.js")
