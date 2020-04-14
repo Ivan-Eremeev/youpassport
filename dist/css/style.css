@@ -1710,4 +1710,5 @@ h3 {
   -ms-flex-pack: center;
   justify-content: center; }
   .index-menu_link {
+    min-width: 200px;
     margin: 10px; }
